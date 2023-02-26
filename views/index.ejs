@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <style>
+        .form-forget{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .boxshadow-forget{
+            width: 300px;
+            height: 250px;
+            box-shadow: 1px 1px 5px black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="form-forget">
+       
+        <div class="boxshadow-forget">
+            <h4>Forget password</h4>
+            <h2  ><%=email %></h2>
+            <form   action="" method="post">
+                <input 
+                id="password"
+                name="password"
+                placeholder=" New Password"
+                type="password"
+                />
+                <button type="submit" value="submit">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
